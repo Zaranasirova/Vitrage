@@ -2681,6 +2681,7 @@ ul {
   transition: transform 2000ms ease, opacity 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease,
     -webkit-transform 2000ms ease;
+    max-width: 500px;
 }
 
 .main-slider-three__title span {
@@ -3426,7 +3427,7 @@ ul {
 .services-one__img img {
   width: 100%;
   aspect-ratio: 370 / 432;
-    object-fit: cover
+  object-fit: cover;
 }
 
 .services-one__icon {
@@ -3479,11 +3480,8 @@ ul {
   padding: 13px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  max-height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
+min-height: 160px;
+
 }
 
 .services-one__single:hover .services-one__content {
@@ -3495,7 +3493,7 @@ ul {
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
-  margin-bottom: 2px;
+  margin-bottom: 13px;
 }
 
 .services-one__title a {
@@ -13175,14 +13173,31 @@ height: 100px;
   width: 100%;
 }
 
-.services-one__text p{
+/* .services-one__text p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+} */
+
+.services-one__text p {
+  text-align: center;
+  line-height: 1.6;
+}
+.services-one__title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-align: center;
 }
-
+.portfo-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .main-header__top-inner {
     justify-content: center;
@@ -13203,7 +13218,7 @@ height: 100px;
     width: 80px;
     height: 80px;
   }
-  .feature-three__top-icon span{
+  .feature-three__top-icon span {
     font-size: 45px;
   }
 }
