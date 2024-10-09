@@ -3481,7 +3481,6 @@ ul {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 min-height: 160px;
-
 }
 
 .services-one__single:hover .services-one__content {
@@ -3494,6 +3493,11 @@ min-height: 160px;
   font-weight: 700;
   line-height: 34px;
   margin-bottom: 13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+
 }
 
 .services-one__title a {
@@ -13194,7 +13198,7 @@ height: 100px;
 }
 .portfo-desc {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -13220,5 +13224,13 @@ height: 100px;
   }
   .feature-three__top-icon span {
     font-size: 45px;
+  }
+}
+
+
+
+@media (min-width: 990px) and (max-width: 1199px) {
+  .services-one__content{
+    min-height: 195px;
   }
 }
