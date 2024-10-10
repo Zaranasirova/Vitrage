@@ -218,8 +218,8 @@
 
   .couonter-one__single {
     position: relative;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex-basis: 33.33%;
+   
     width: 100%;
     float: none;
   }
@@ -257,7 +257,7 @@
   }
 
   .about-two {
-    padding: 120px 0 120px;
+    padding: 60px 0 60px;
   }
 
   .team-details__top-left {
@@ -570,10 +570,9 @@
 
   .couonter-one__single {
     position: relative;
-    flex: 0 0 50%;
-    max-width: 50%;
+flex-basis: 50%;
     width: 100%;
-    float: none;
+ 
   }
 
   .couonter-one__content-box {
@@ -1123,16 +1122,17 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
+    /* justify-content: center;
+    flex-direction: column; */
   }
 
   .couonter-one__single {
     position: relative;
-    flex: 0 0 100%;
+    /* flex: 0 0 100%;
     max-width: 100%;
     width: 280px;
-    float: none;
+    float: none; */
+    flex-basis: 50%;
   }
 
   .blog-three__right:before {
