@@ -218,14 +218,14 @@
 
   .couonter-one__single {
     position: relative;
-    flex-basis: 33.33%;
+    flex-basis: 50%;
    
     width: 100%;
     float: none;
   }
 
   .couonter-one__content-box {
-    justify-content: center;
+    justify-content: start;
   }
 
   .blog-three__right:before {
@@ -514,7 +514,7 @@
   }
 
   .feature-three__top-inner {
-    padding: 50px 50px 17px;
+    padding: 10px 20px 10px;
   }
 
   .feature-three__bottom-inner {
@@ -576,7 +576,7 @@ flex-basis: 50%;
   }
 
   .couonter-one__content-box {
-    justify-content: center;
+    justify-content: start;
   }
 
   .blog-three__right:before {
@@ -1051,7 +1051,7 @@ flex-basis: 50%;
   }
 
   .feature-three__top-inner {
-    padding: 50px 0px 17px;
+    padding: 17px 0px 17px;
   }
 
 

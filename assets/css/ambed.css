@@ -7773,7 +7773,7 @@ ul {
 .couonter-one {
   position: relative;
   display: block;
-  padding: 20px 0 20px;
+  padding: 5px 0 5px;
   background-color: var(--ambed-black, #3c3531);
   z-index: 1;
 }
@@ -7804,7 +7804,7 @@ ul {
   position: relative;
   float: left;
   margin: 15px 0;
-  flex-basis: 33.33%;
+  flex-basis: 25%;
   width: 100%;
 }
 
@@ -7871,10 +7871,17 @@ ul {
   color: var(--ambed-white, #ffffff);
 }
 
-.couonter-one__text {
+.couonter-one__text  p{
   font-size: 16px;
   line-height: 16px;
   color: #c1b8b3;
+
+}
+.couonter-one__text{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 .couonter-one .odometer-formatting-mark {
@@ -13331,4 +13338,26 @@ height: 100px;
 
 .main-slider-three__btn-box .main-slider-three__btn :hover {
   color: #2f2a27;
+}
+
+
+@media(max-width:459px){
+  .couonter-one__icon-box span{
+    font-size: 50px;
+  }
+  .couonter-one__count-box-inner h3{
+    font-size: 40px;
+  }
+}
+@media(max-width:349px){
+  .couonter-one__count-box-inner h3{
+    font-size: 35px;
+  }
+  .couonter-one__text p{
+    font-size: 13px;
+  }
+
+  .couonter-one__icon-box span{
+    font-size: 37px;
+  }
 }
