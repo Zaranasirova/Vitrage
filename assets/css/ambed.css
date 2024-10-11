@@ -4628,7 +4628,7 @@ ul {
   position: relative;
   display: block;
   border-bottom: 1px solid var(--ambed-bdr-color, #e2ddda);
-  padding: 60px 0 60px;
+  padding: 50px 0 50px;
 }
 
 .brand-one__title {
@@ -4660,6 +4660,10 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 154px;
+  margin-right: 100px;
+  height: 90px;
+  border: 1px solid red
 }
 
 .brand-one__main-content .swiper-slide img {
@@ -4667,6 +4671,10 @@ ul {
   transition: 500ms;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ 
 }
 
 .brand-one__main-content .swiper-slide img:hover {
@@ -7177,11 +7185,11 @@ ul {
 }
 
 .why-choose-one-shape-1 {
-  position: absolute;
+position: absolute;
   top: 0;
   left: 0;
   width: 682px;
-  height: 782px;
+  height: 630px;
   background-color: var(--ambed-primary, #f2eeeb);
   border-top-right-radius: 74px;
   border-bottom-left-radius: 74px;
@@ -13192,7 +13200,7 @@ height: 100px;
 .row-brands {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 
 .brand-one {
