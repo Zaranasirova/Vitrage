@@ -7736,7 +7736,7 @@ ul {
 .couonter-one {
   position: relative;
   display: block;
-  padding: 10px 0 10px;
+  padding: 10px 0 0px;
   background-color: var(--ambed-black, #3c3531);
   z-index: 1;
 }
