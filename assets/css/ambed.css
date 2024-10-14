@@ -4929,9 +4929,18 @@ ul {
   margin-bottom: 3px;
 }
 
-.newsletter__text {
+.news-letter-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: red;
+  width: 400px;
   color: #f0d9cd;
 }
+
+
+
 
 .newsletter__right {
   position: relative;
