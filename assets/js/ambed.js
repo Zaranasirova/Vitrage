@@ -941,3 +941,23 @@
 
 
 })(jQuery);
+
+
+
+$(document).ready(function () {
+  $(".phone-mask").mask("(00) 000-00-00");
+
+  $(".phone-mask").on("keydown", function (e) {
+    if (
+      e.keyCode === 8 ||
+      e.keyCode === 46 ||
+      (e.keyCode >= 37 && e.keyCode <= 40) ||
+      e.keyCode === 9
+    ) {
+      return;
+    }
+    if (e.key.length === 1 && e.key.match(/[^0-9]/)) {
+      e.preventDefault();
+    }
+  });
+});
