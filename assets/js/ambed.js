@@ -961,3 +961,28 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+
+
+var swiperThumbs = new Swiper(".swiper-wrapper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+
+var swiperMain = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  navigation: {
+      nextEl: ".swiper-button-next-thumbs",
+      prevEl: ".swiper-button-prev-thumbs",
+  },
+  thumbs: {
+      swiper: swiperThumbs,
+  },
+});
+
+

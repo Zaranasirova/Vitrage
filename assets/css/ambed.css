@@ -2203,6 +2203,7 @@ ul {
 .main-slider .swiper-slide {
   position: relative;
   background-color: var(--ambed-black, #3c3531);
+  
 }
 
 .main-slider .container {
@@ -3394,6 +3395,8 @@ ul {
   display: block;
   overflow: hidden;
   z-index: 1;
+  aspect-ratio: 370 / 432;
+  object-fit: cover
 }
 
 .services-one__img:before {
@@ -3485,7 +3488,7 @@ ul {
   padding: 10px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  min-height: 144px;
+  min-height: 149px;
 }
 
 .services-one__single:hover .services-one__content {
@@ -4905,6 +4908,7 @@ ul {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   z-index: 1;
+  border-top-left-radius: 50px;
 }
 
 .newsletter-shape-1 {
@@ -4923,6 +4927,7 @@ ul {
   background-blend-mode: color-dodge;
   opacity: 0.08;
   z-index: -1;
+  border-top-left-radius: 50px;
 }
 
 .newsletter__left {
@@ -9350,7 +9355,7 @@ ul {
 .services-page {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 40px;
 }
 
 .services-page--carousel {
@@ -13491,4 +13496,155 @@ iframe{
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
+}
+
+
+
+.pagination-area .swiper-button-prev,
+.pagination-area .swiper-button-next {
+    right: -20px;
+    margin-top: -0;
+}
+
+.pagination-area {
+    position: relative;
+}
+
+.pagination-area .swiper-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    /* This will keep the slides contained */
+}
+
+.pagination-area .swiper-button-next,
+.pagination-area .swiper-button-prev {
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.pagination-area .swiper-button-next {
+    right: -35px;
+}
+
+.pagination-area .swiper-button-prev {
+    left: -35px;
+}
+
+.pagination-area li a {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    font-size: 16px;
+    border-radius: 100%;
+    color: #000;
+    box-shadow: 0 0px 9px 0.4px rgb(0 0 0 / 6%);
+}
+
+.pagination-area .swiper-wrapper {
+    padding: 10px 0;
+}
+
+.pagination-area .swiper-button-prev:after,
+.pagination-area .swiper-button-next:after {
+    color: white;
+}
+
+.th-pagination a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    line-height: 45px;
+}
+
+.th-pagination li {
+    width: 100%;
+}
+
+.pagination-area .swiper-button-next.dnone {
+    display: none !important;
+}
+
+.pagination-area .swiper-button-prev.dnone {
+    display: none !important;
+}
+
+.pagination-area .swiper-button-next,
+.pagination-area .swiper-button-prev {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #f6f6f6 !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
+
+.pagination-area .swiper-button-next:after,
+.pagination-area .swiper-button-prev:after {
+    font-size: 12.5px;
+    color: #000;
+    font-weight: 600;
+}
+
+.pagination-area li a.active {
+    background-color: #f8f3ef;
+    color: #9d3f3f;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.pagination-area .swiper-wrapper {
+    /* padding-left: 36px; */
+}
+
+.swiper-slide {
+    overflow: visible;
+}
+
+@media (max-width: 576px) {
+    .pagination-area .swiper-button-next {
+        right: -10px;
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .pagination-area .swiper-button-prev {
+        left: -10px;
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .pagination-area .swiper-button-next:after,
+    .pagination-area .swiper-button-prev:after {
+        font-size: 9px !important;
+    }
+}
+
+
+.pagination-area{
+  width: 270px;
+  margin: 0 auto;
+}
+.swiper{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block
+}
+.swiper-horizontal{
+  touch-action: pan-y
+}
+
+.swiper-slide{
+  width: 40px !important;
 }
