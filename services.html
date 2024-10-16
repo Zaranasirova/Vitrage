@@ -755,6 +755,67 @@
     <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
     <script src="assets/vendors/toolbar/js/toolbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var swiperThumbs = new Swiper(".mySwiper", {
+              spaceBetween: 10,
+              slidesPerView: 5,
+              freeMode: true,
+              watchSlidesProgress: true,
+              navigation: {
+                  nextEl: ".swiper-button-next-thumbs",
+                  prevEl: ".swiper-button-prev-thumbs",
+              },
+              breakpoints: {
+                  576: {
+                      slidesPerView: 5, // Small tablets
+                  },
+                  768: {
+                      slidesPerView: 6, // Small tablets
+                  },
+                  992: {
+                      slidesPerView: 6, // Large tablets
+                  },
+                  1200: {
+                      slidesPerView: 5, // Desktop
+                  },
+              },
+              on: {
+                  init: function() {
+                      toggleNavigationButtons(this);
+                  },
+                  resize: function() {
+                      toggleNavigationButtons(this);
+                  },
+              }
+          });
+
+
+          function toggleNavigationButtons(swiper) {
+              setTimeout(() => {
+                  const totalSlides = swiper.slides.length;
+                  const visibleSlides = swiper.params.slidesPerView;
+
+                  const nextButton = document.querySelector(".swiper-button-next");
+                  const prevButton = document.querySelector(".swiper-button-prev");
+
+                  if (nextButton && prevButton) {
+
+                      if (totalSlides <= visibleSlides) {
+                          nextButton.classList.add('dnone');
+                          prevButton.classList.add('dnone');
+                          nextButton.style.display = 'none';
+                          prevButton.style.display = 'none';
+                      } else {
+                          nextButton.style.display = 'block';
+                          prevButton.style.display = 'block';
+                      }
+                  } else {
+                      console.error('Navigation buttons not found');
+                  }
+              }, 100);
+          }
+      });
+  </script>
   </body>
 </html>
