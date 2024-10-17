@@ -53,6 +53,16 @@
 
     <!-- toolbar css -->
     <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
 
 </head>
 
@@ -126,7 +136,7 @@
                         ></a>
                         <ul class="main-menu__list">
                           <li class="dropdown megamenu">
-                            <a href="index3.html">Ana Səhifə </a>
+                            <a href="index.html">Ana Səhifə </a>
                           </li>
                           <li>
                             <a href="about.html">Haqqımızda </a>
@@ -217,7 +227,49 @@
         <section class="service-details">
             <div class="container">
                 <div class="row">
-                    
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="service-details__left">
+                            <div class="service-details__category">
+                                <ul class="service-details__category-list list-unstyled">
+                                    <li class="active"><a href="room-wallpapers.html">Room Wallpapers <span
+                                                class="fa fa-angle-right"></span></a></li>
+
+                                    <li><a href="wall-sheets.html">Wall Sheets <span
+                                                class="fa fa-angle-right"></span></a></li>
+
+                                    <li><a href="wall-painting.html">Wall Painting <span
+                                                class="fa fa-angle-right"></span></a></li>
+
+                                    <li><a href="interior-designing.html">Interior Designing <span
+                                                class="fa fa-angle-right"></span></a></li>
+
+                                    <li><a href="pvc-panels.html">PVC Panels <span class="fa fa-angle-right"></span></a>
+                                    </li>
+
+                                    <li><a href="outdoor-design.html">Outdoor Design <span
+                                                class="fa fa-angle-right"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="service-details__need-help">
+                                <div class="service-details__need-help-bg"
+                                    style="background-image: url(assets/images/backgrounds/service-details-need-help-bg.jpg)">
+                                </div>
+                                <div class="service-details__need-help-icon">
+                                    <span class="icon-phone-call"></span>
+                                </div>
+                                <h2 class="service-details__need-help-title">Easy Solutions <br> to Your Wall <br>
+                                    Beauty</h2>
+                                <div class="service-details__need-help-contact">
+                                    <p>Call anytime</p>
+                                    <a href="tel:980009630"> + 98 (000) - 9630</a>
+                                </div>
+                            </div>
+                            <div class="service-details__download">
+                                <a href="about.html" class="thm-btn service-details__download-btn">Download Our
+                                    Flyers</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xl-8 col-lg-7">
                         <div class="service-details__right">
                             <div class="service-details__img">
@@ -243,126 +295,72 @@
                                     type specimen book. It has survived not only five centuries, but also the leap into
                                     electronic typesetting.</p>
                             </div>
-                            <div class="service-details__points-two">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="service-details__points-two-single">
-                                            <div class="service-details__points-two-content">
-                                                <div class="service-details__points-two-icon">
-                                                    <span class="icon-long-paper-roll"></span>
-                                                </div>
-                                                <h4>Proin Tempus</h4>
-                                                <p>There are many of of lorem Ipsum, but the majori have suffered.</p>
+                       
+                            <div class="blog-area blog-related-area">
+                                <div class="row post-items-style3">
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="single_related">
+                                            <div class="related_thumb">
+                                                <a href="assets/images/services/services-1-1.jpg" data-fancybox="blog-images">
+                                                    <img src="assets/images/services/services-1-1.jpg" alt="">
+                                                    <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="service-details__points-two-single">
-                                            <div class="service-details__points-two-content">
-                                                <div class="service-details__points-two-icon">
-                                                    <span class="icon-wallpaper-8"></span>
-                                                </div>
-                                                <h4>Proin Tempus</h4>
-                                                <p>There are many of of lorem Ipsum, but the majori have suffered.</p>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="single_related">
+                                            <div class="related_thumb">
+                                                <a href="assets/images/services/services-1-5.jpg" data-fancybox="blog-images">
+                                                    <img src="assets/images/services/services-1-5.jpg" alt="">
+                                                    <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="single_related">
+                                            <div class="related_thumb">
+                                                <a href="assets/images/services/services-1-2.jpg" data-fancybox="blog-images">
+                                                    <img src="assets/images/services/services-1-2.jpg" alt="">
+                                                    <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="single_related">
+                                            <div class="related_thumb">
+                                                <a href="assets/images/services/services-1-3.jpg" data-fancybox="blog-images">
+                                                    <img src="assets/images/services/services-1-3.jpg" alt="">
+                                                    <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="single_related">
+                                            <div class="related_thumb">
+                                                <a href="assets/images/services/services-1-4.jpg" data-fancybox="blog-images">
+                                                    <img src="assets/images/services/services-1-4.jpg" alt="">
+                                                    <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="single_related">
+                                            <div class="related_thumb">
+                                                <a href="assets/images/services/services-1-6.jpg" data-fancybox="blog-images">
+                                                    <img src="assets/images/services/services-1-6.jpg" alt="">
+                                                    <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="service-details__benefits">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="service-details__benefits-img">
-                                            <img src="assets/images/services/service-details-benefits-img.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="service-details__benefits-right">
-                                            <h3 class="service-details__benefits-title">Our Benefits</h3>
-                                            <p class="service-betails__benefits-text-1">Duis aute irure dolor in
-                                                reprehenderit in voluptate velit esse cillum.</p>
-                                            <ul class="list-unstyled service-details__benefits-points">
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="fa fa-check"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Praesent efficitur quam sit amet</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="fa fa-check"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Nunc cursus dolor id purus euismod</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="fa fa-check"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Quisque tincidunt eros ac place viverra</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="service-details__faq">
-                                <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                    <div class="accrodion active">
-                                        <div class="accrodion-title">
-                                            <h4>Nulla eu purus scelerisque, dignissim diam.</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam. </p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>Quisque non diam porta, ullamcorper dolor sit amet.</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>How can I make a change to my application?</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion last-chiled">
-                                        <div class="accrodion-title">
-                                            <h4>Sed mattis neque sed commodo efficitur.</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -595,7 +593,14 @@
     <script src="assets/vendors/toolbar/js/js.cookie.min.js"></script>
     <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
     <script src="assets/vendors/toolbar/js/toolbar.js"></script>
-
+    <script>
+      $(document).ready(function() {
+          $('[data-fancybox="blog-images"]').fancybox({
+              // Fancybox settings here, if needed
+          });
+      });
+  </script>
+  
 </body>
 
 

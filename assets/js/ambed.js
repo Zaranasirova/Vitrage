@@ -972,8 +972,6 @@ var swiperThumbs = new Swiper(".swiper-wrapper", {
   freeMode: true,
   watchSlidesProgress: true,
 });
-
-
 var swiperMain = new Swiper(".mySwiper ", {
   spaceBetween: 10,
   navigation: {
