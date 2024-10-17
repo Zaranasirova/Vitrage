@@ -9576,6 +9576,8 @@ ul {
 
 .service-details__img img {
   width: 100%;
+  aspect-ratio: 770/445;
+  object-fit: cover;
 }
 
 .service-details__icon {
