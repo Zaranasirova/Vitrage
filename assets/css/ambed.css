@@ -8381,7 +8381,7 @@ ul {
 }
 
 .page-header__inner h2 {
-  font-size: 40px;
+  font-size: 25px;
   color: var(--ambed-white, #ffffff);
   font-weight: 900;
   line-height: 50px;
@@ -9604,7 +9604,7 @@ ul {
   position: relative;
   display: block;
   margin-top: 30px;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
 }
 
 .service-details__content-title {
@@ -13711,3 +13711,42 @@ overflow: hidden;
 
 
 
+.home-footer{
+  margin-top: 0px !important;
+}
+.home-page-site-footer-top{
+  padding: 40px 0 40px !important;
+}
+
+
+@media (max-width:1200px) {
+  .contact-page-newsletter{
+    margin-top: -54px !important;
+  }
+}
+
+@media (max-width:995px){
+  .contact-page-newsletter{
+    margin-top: -125px !important;
+  }
+  .newsletter__inner{
+    padding: 20px 20px;
+  }
+}
+
+@media(max-width:770px){
+  .contact-page-newsletter{
+    margin-top: -190px !important;
+  }
+}
+
+
+@media(max-width:470px){
+  .newsletter__title{
+    font-size: 20px;
+  }
+  .news-letter-text p{
+    line-height: 1.5;
+    font-size: 14px;
+  }
+}
