@@ -3487,7 +3487,7 @@ ul {
   padding: 10px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  min-height: 152px;
+  min-height: 159px;
 }
 
 .services-one__single:hover .services-one__content {
@@ -6303,10 +6303,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
+
 }
 
 .faq-one-accrodion .accrodion-content p {
@@ -6881,10 +6878,7 @@ ul {
 
 .leading__points li .text {
   margin-left: 20px;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+
 }
 
 .leading__points li .text p {
@@ -7583,7 +7577,7 @@ ul {
 .project-three {
   position: relative;
   display: block;
-  padding: 25px 0 20px;
+  padding: 25px 0 45px;
 }
 
 .project-three__top {
@@ -7830,7 +7824,7 @@ ul {
 .couonter-one {
   position: relative;
   display: block;
-  padding: 15px 0;
+  padding: 20px 0;
   background-color: var(--ambed-black, #3c3531);
   z-index: 1;
 }
@@ -8405,9 +8399,9 @@ ul {
   transition: all 500ms ease;
 }
 
-.thm-breadcrumb li + li {
+/* .thm-breadcrumb li + li {
   margin-left: 10px;
-}
+} */
 
 .thm-breadcrumb li a {
   position: relative;
@@ -9537,14 +9531,15 @@ ul {
 .service-details__need-help-contact p {
   font-size: 16px;
   color: var(--ambed-white, #ffffff);
-  margin: 0;
+
   line-height: 20px;
+  margin-bottom: 12px;
 }
 
 .service-details__need-help-contact a {
-  font-size: 20px;
+  font-size: 28px;
   color: var(--ambed-white, #ffffff);
-  font-weight: 400;
+  font-weight: 500;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -9576,8 +9571,10 @@ ul {
 
 .service-details__img img {
   width: 100%;
-  aspect-ratio: 770/445;
-  object-fit: cover;
+  height: 400px;
+  object-fit: contain;
+  background-color:var(--ambed-primary, #f2eeeb);
+  padding: 15px;
 }
 
 .service-details__icon {
@@ -13286,10 +13283,15 @@ height: 100px;
 
 .who-choose-one-right-text  {
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 45px;
+}
+
+
+.who-choose-one-right-text p{
+line-height:1.6
 }
 
 .row-brands {
@@ -13319,7 +13321,7 @@ height: 100px;
 
 .services-one__text p {
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .services-one__title a {
   display: -webkit-box;
@@ -13650,7 +13652,7 @@ overflow: hidden;
 }
 .related_thumb img {
   width: 100%;
-  aspect-ratio: 1024 / 572;
+  aspect-ratio: 100 / 100;
   height: unset;
   object-fit: cover;
 }
@@ -13664,7 +13666,7 @@ overflow: hidden;
 }
 .zoom-icon i {
   font-size: 20px;
-  color: #8cc4dc;
+  color: var(--ambed-base, #a47c68);
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 50%;
@@ -13735,10 +13737,22 @@ overflow: hidden;
   }
   .news-letter-text p{
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 
 .fa-whatsapp{
   font-size: 16px;
+}
+
+@media(max-width:770px){
+  .service-details__img img{
+    height:350px;
+  }
+}
+
+@media(max-width:520px){
+  .service-details__img img{
+    height:250px;
+  }
 }
