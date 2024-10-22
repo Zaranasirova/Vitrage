@@ -8,15 +8,9 @@
     <!-- favicons Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
         rel="stylesheet">
-
-
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
@@ -55,6 +49,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body class="custom-cursor">
@@ -204,11 +200,11 @@
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Ana Səhifə</a></li>
                         <li><span>/</span></li>
-                        <li>Projects</li>
+                        <li>Portfolio</li>
                     </ul>
-                    <h2>Our Projects</h2>
+                    <h2>Layihələrimiz</h2>
                 </div>
             </div>
         </section>
@@ -327,6 +323,54 @@
                         </div>
                     </div>
                 </div>
+                <div class="pagination-area">
+
+                    <div thumbsSlider="" class="swiper mySwiper th-pagination">
+                        <div class="swiper-wrapper">
+        
+                            <div class="swiper-slide">
+                                <li>
+                                    <li><a class="active" href="#">1</a></li>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">2</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">3</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">4</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">5</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">6</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">7</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">8</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">9</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">10</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">11</a></li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li><a href="#">12</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev-thumbs"></div>
+                    <div class="swiper-button-next swiper-button-next-thumbs"></div>
+                  </div>
             </div>
         </section>
         <!--Projects Page End-->
@@ -556,9 +600,72 @@
     <script src="assets/vendors/toolbar/js/js.cookie.min.js"></script>
     <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
     <script src="assets/vendors/toolbar/js/toolbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiperThumbs = new Swiper(".mySwiper", {
+                spaceBetween: 10,
+                slidesPerView: 5,
+                freeMode: true,
+                watchSlidesProgress: true,
+                navigation: {
+                    nextEl: ".swiper-button-next-thumbs",
+                    prevEl: ".swiper-button-prev-thumbs",
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 5,
+                    },
+                    768: {
+                        slidesPerView: 6, 
+                    },
+                    992: {
+                        slidesPerView: 6, 
+                    },
+                    1200: {
+                        slidesPerView: 5, 
+                    },
+                },
+                on: {
+                    init: function() {
+                        toggleNavigationButtons(this);
+                    },
+                    resize: function() {
+                        toggleNavigationButtons(this);
+                    },
+                }
+            });
+  
+  
+            function toggleNavigationButtons(swiper) {
+                setTimeout(() => {
+                    const totalSlides = swiper.slides.length;
+                    const visibleSlides = swiper.params.slidesPerView;
+  
+                    const nextButton = document.querySelector(".swiper-button-next");
+                    const prevButton = document.querySelector(".swiper-button-prev");
+  
+                    if (nextButton && prevButton) {
+  
+                        if (totalSlides <= visibleSlides) {
+                            nextButton.classList.add('dnone');
+                            prevButton.classList.add('dnone');
+                            nextButton.style.display = 'none';
+                            prevButton.style.display = 'none';
+                        } else {
+                            nextButton.style.display = 'block';
+                            prevButton.style.display = 'block';
+                        }
+                    } else {
+                        console.error('Navigation buttons not found');
+                    }
+                }, 100);
+            }
+        });
+    </script>
 
 </body>
 
 
-<!-- Mirrored from ambed-html.vercel.app/main-html/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Oct 2024 10:30:42 GMT -->
+
 </html>

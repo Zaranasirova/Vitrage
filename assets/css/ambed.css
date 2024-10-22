@@ -9922,7 +9922,7 @@ color:var(--ambed-base, #a47c68)
 .projects-page {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 30px 0 40px;
 }
 
 .projects-page--carousel {
