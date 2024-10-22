@@ -13887,3 +13887,12 @@ overflow: hidden;
     height:250px;
   }
 }
+
+@media(max-width:990px){
+  #box1{
+    order:1;
+  }
+  #box2{
+    order:2;
+  }
+}
