@@ -7916,6 +7916,7 @@ color:var(--ambed-base, #a47c68)
   -webkit-transition: all 700ms ease;
   transition: all 700ms ease;
   z-index: 2;
+  left: 48px;
 }
 
 .project-three__single:hover .project-three__content {
@@ -13902,5 +13903,39 @@ overflow: hidden;
   }
   #box2{
     order:2;
+  }
+}
+
+@media(max-width:990px){
+  .project-details__img img{
+    height: 390px;
+  }
+  .project-details__details{
+    padding: 10px 0 20px;
+  }
+  .project-details__details-content{
+    text-align: center;
+  }
+}
+
+@media(max-width:790px){
+  .project-details__img img{
+    height: 300px;
+  }
+}
+
+@media(max-width:575px){
+  .project-details__img img{
+    height: 250px;
+  }
+ 
+}
+
+@media(max-width:490px){
+  .project-details__img img{
+    height: 200px;
+  }
+  .project-details__room-wallpapers-title{
+    font-size: 27px;
   }
 }

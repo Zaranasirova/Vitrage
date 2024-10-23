@@ -692,7 +692,7 @@ flex-basis: 50%;
 
   .project-details__details {
     flex-direction: column;
-    align-items: baseline;
+  
   }
 
   .project-details__details li:before {
@@ -1294,8 +1294,7 @@ flex-basis: 50%;
 
   .project-details__details {
     flex-direction: column;
-    align-items: baseline;
-    padding: 46px 30px 44px;
+ 
   }
 
   .project-details__details li:before {
