@@ -301,9 +301,9 @@
     margin-top: 60px;
   }
 
-  .project-details__details li:before {
+  /* .project-details__details li:before {
     right: -30px;
-  }
+  } */
 
   .project-details__points-content-box {
     margin-top: -8px;
