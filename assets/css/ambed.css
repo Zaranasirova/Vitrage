@@ -4797,7 +4797,6 @@ color:var(--ambed-base, #a47c68)
   width: 154px;
   margin-right: 100px;
   height: 90px;
-  border: 1px solid red;
 }
 
 .brand-one__main-content .swiper-slide img {
@@ -6430,7 +6429,7 @@ color:var(--ambed-base, #a47c68)
 } */
 .service-details__need-help-title{
   height: 100px;
-    border: 1px solid red;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11539,7 +11538,7 @@ body.boxed-wrapper {
   max-width: 240px;
   max-height: 80px;
   object-fit: contain;
-  border: 1px solid red;
+ 
 }
 
 .main-header__logo .light-logo {
@@ -13565,7 +13564,7 @@ line-height:1.6
 
 
 .who-choose-one-right-text-about{
-  border: 1px solid red;
+  
   display: -webkit-box;
   -webkit-line-clamp: 14;
   -webkit-box-orient: vertical;  
